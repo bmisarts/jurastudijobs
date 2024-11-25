@@ -1,0 +1,167 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light ps-md-0">
+    <div class="d-flex w-100">
+        <a class="navbar-brand me-5" href="#">
+        <img class="logo" src="assets/images/logo.png" alt="Jurastudijobs">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="nav-links mb-0">
+            <li><a href="#">
+                <span class="me-2">Jurastudijobs</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </a></li>
+            <li><a href="#">Get job alerts</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+        <div class="d-flex ms-auto">
+            <button class="lang-btn me-3">
+                <i class="fa-solid fa-globe"></i> 
+                <span class="mx-2">English</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <button class="btn btn-success" disabled>
+                <span class="me-2">Login</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+        </div>
+    </div>
+</nav>
+<section class="hero text-center py-5">
+    <h1 class="title text-light">
+        Hand picked curated jobs for law students in Germany
+    </h1>
+    <div class="search-bar mt-3 d-flex align-items-center position-relative">
+        <i class="fas fa-search search-icon mx-2"></i>
+        <input 
+          type="text" 
+          class="form-control" 
+          [placeholder]="dynamicText+cursorSign" 
+          [(ngModel)]="searchQuery" 
+        />
+    </div>
+</section>
+
+<section class="job-list mt-5">
+    <div class="job-card d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <div class="company-logo">
+                <div class="logo-text">RA Wolfgang Tiede, LL.M</div>
+            </div>
+            <div class="job-infos ms-5">
+                <h2 class="job-title">Studentische Hilfskraft (m/w/d) gesucht</h2>
+                <div class="tags mt-3">
+                    <span class="tag homeoffice">
+                    <i class="fas fa-map-marker-alt"></i> Homeoffice
+                    </span>
+                    <span class="tag">
+                    <i class="fas fa-briefcase"></i> Recherchetätigkeiten
+                    </span>
+                </div>
+            </div>
+        </div>
+        <button class="apply-btn">
+            Apply <i class="fas fa-arrow-right"></i>
+        </button>
+        <div class="semester">
+            <i class="fa-solid fa-calendar"></i>
+            <span class="semester-text">SEMESTER</span>
+            <span class="semester-number">3+</span>
+        </div>
+    </div>
+
+    
+    <div class="job-card d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <div class="company-logo">
+                <div class="logo-text">Werkstudent (m/w/d) im Bereich Jura</div>
+            </div>
+            <div class="job-infos ms-5">
+                <h2 class="job-title">Werkstudent (m/w/d) im Bereich Jura</h2>
+                <div class="tags mt-3">
+                    <span class="tag homeoffice">
+                    <i class="fas fa-map-marker-alt"></i> Homeoffice
+                    </span>
+                    <span class="tag">
+                        <i class="fas fa-briefcase"></i> Vertragsklauseln
+                    </span>
+                    <span class="tag">
+                        <i class="fas fa-briefcase"></i> Übersetzung
+                    </span>
+                </div>
+            </div>
+        </div>
+        <button class="apply-btn">
+            Apply <i class="fas fa-arrow-right"></i>
+        </button>
+        <div class="semester">
+            <i class="fa-solid fa-calendar"></i>
+            <span class="semester-text">SEMESTER</span>
+            <span class="semester-number">1+</span>
+        </div>
+    </div>
+</section>
+<section class="contact mt-5">
+    <div class="d-flex justify-content-between align-items-center">
+        <h1 class="text-light">Get new jura studentjobs sent to your inbox.</h1>
+        <div class="contact-form">
+            <form>
+                <h3>Leave Us Your Info.</h3>
+                <div class="form-group mt-4">
+                    <input class="form-control" type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group mt-3">
+                    <input class="form-control" type="email" placeholder="Your Email" required>
+                </div>
+                <button type="submit" class="btn btn-danger mt-4">
+                    Submit <i class="fa fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-top">
+        <ul class="footer-links">
+            <li><a href="#">
+                <span class="me-2">Jurastudijobs</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </a></li>
+            <li><a href="#">Get job alerts</a></li>
+            <li><a href="#">Impressum</a></li>
+            <li><a href="#">Datenschutzerklärung</a></li>
+            <li><a href="#">Widerrufsbelehrung</a></li>
+            <li><a href="#">Bildrechte</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+        <div class="footer-lang">
+        <button class="lang-btn">
+            <i class="fa-solid fa-globe"></i> 
+            <span class="">English</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+        <p><strong>Copyright © 2024 Jurastudijobs</strong></p>
+        <div class="footer-social">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                </svg>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+</footer>
