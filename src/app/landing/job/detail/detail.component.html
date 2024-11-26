@@ -1,0 +1,66 @@
+<div class="py-5">
+    <div class="row">
+        <div class="col-md-8 job-description">
+            <a [routerLink]="['/']" class="back-btn">
+                <i class="fa-solid fa-arrow-left me-2"></i> Back
+            </a>
+            <h1 class="mt-3 w-75">Werkstudent (m/w/d) im Bereich Jura</h1>
+            <div class="d-flex mb-5">
+                <div class="tags mt-3">
+                    <span class="tag homeoffice">
+                    <i class="fas fa-map-marker-alt"></i> Homeoffice
+                    </span>
+                    <span class="tag">
+                        <i class="fas fa-briefcase"></i> Vertragsklauseln
+                    </span>
+                    <span class="tag">
+                        <i class="fas fa-briefcase"></i> Übersetzung
+                    </span>
+                </div>
+                <div class="semester ms-5">
+                    <i class="fa-solid fa-calendar"></i>
+                    <span class="semester-text">SEMESTER</span>
+                    <span class="semester-number">1+</span>
+                </div>
+            </div>
+            <p>GHC Gerling, Holz & Co. Handels GmbH ist ein mittelständisches Unternehmen mit einer über 120-jährigen Tradition in der Chemiegase-Industrie. Mit unserem außergewöhnlichen Programm an Spezialgasen, Chemikalien und Dienstleistungen versorgen wir weltweit unsere Geschäftspartner in Industrie, Pharmazie und Raumfahrt. Unsere 250 Mitarbeiter an sieben Standorten in Deutschland und in unserem Hauptsitz in Hamburg bilden dafür die Basis.</p>
+            <h2>Werkstudent (m/w/d) im Bereich Jura</h2>
+            <p>Du unterstützt uns ab dem nächstmöglichen Zeitpunkt im Tagesgeschäft, in rechtlichen Fragestellungen und Übersetzungen für den internationalen Export von Handelsgütern.</p>
+            <h2>Das erwartet Dich</h2>
+            <ul>
+                <li>Eingeschriebener Student im Bereich Rechtswissenschaften</li>
+                <li>Gute Englischkenntnisse in Wort und Schrift</li>
+                <li>Interesse am internationalen Handelsrecht und Vertragsrecht</li>
+                <li>Sorgfältige und zuverlässige Arbeitsweise sowie Vertrauenswürdigkeit</li>
+                <li>Selbständige und strukturierte Arbeitsweise</li>
+            </ul>
+            <h2>Das können wir Dir anbieten</h2>
+            <ul>
+                <li>Flexible Arbeitszeiten</li>
+                <li>Homeoffice</li>
+                <li>Flache Hierarchien und kurze Entscheidungswege</li>
+                <li>Spannende Einblicke in die rechtlichen Aspekte des Exports von Gasen und Chemikalien</li>
+                <li>Möglichkeit zur persönlichen und fachlichen Weiterentwicklung</li>
+            </ul>
+        </div>
+        <div class="col-md-4 p-5">
+            <nav class="navbar navbar-expand navbar-light bg-light sticky-top">
+                <div class="right-side-infos d-flex flex-column justify-content-center">
+                    <div class="company-logo">
+                        <div class="logo-text">RA Wolfgang Tiede, LL.M</div>
+                    </div>
+                    <h2>GHC</h2>
+                    <a href="https://www.ghc.de/en">ghc.de/en</a>
+                    <h5 class="mt-4 mb-2">Share this job</h5>
+                    <div (click)="copyJobLink()" class="link-btn" [ngClass]="{
+                        'link-btn-active': linkCopied,
+                        'link-btn-inactive':!linkCopied
+                    }">
+                        <span class="me-2">{{ linkCopied? 'Link copied' : 'Click to copy link' }}</span>
+                        <i class="fa-solid fa-link"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

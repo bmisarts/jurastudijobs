@@ -1,39 +1,8 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light ps-md-0">
-    <div class="d-flex w-100">
-        <a class="navbar-brand me-5" href="#">
-        <img class="logo" src="assets/images/logo.png" alt="Jurastudijobs">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="nav-links mb-0">
-            <li><a href="#">
-                <span class="me-2">Jurastudijobs</span>
-                <i class="fa-solid fa-chevron-down"></i>
-            </a></li>
-            <li><a href="#">Get job alerts</a></li>
-            <li><a href="#">Blog</a></li>
-        </ul>
-        <div class="d-flex ms-auto">
-            <button class="lang-btn me-3">
-                <i class="fa-solid fa-globe"></i> 
-                <span class="mx-2">English</span>
-                <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <button class="btn btn-success" disabled>
-                <span class="me-2">Login</span>
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
-        </div>
-        </div>
-    </div>
-</nav>
-<section class="hero text-center py-5">
+<section class="hero text-center">
     <h1 class="title text-light">
         Hand picked curated jobs for law students in Germany
     </h1>
-    <div class="search-bar mt-3 d-flex align-items-center position-relative">
+    <div class="search-bar mt-4 d-flex align-items-center position-relative">
         <i class="fas fa-search search-icon mx-2"></i>
         <input 
           type="text" 
@@ -62,9 +31,9 @@
                 </div>
             </div>
         </div>
-        <button class="apply-btn">
+        <a [routerLink]="['job/detail','semester-tree']" class="apply-btn">
             Apply <i class="fas fa-arrow-right"></i>
-        </button>
+        </a>
         <div class="semester">
             <i class="fa-solid fa-calendar"></i>
             <span class="semester-text">SEMESTER</span>
@@ -93,9 +62,9 @@
                 </div>
             </div>
         </div>
-        <button class="apply-btn">
+        <a [routerLink]="['job/detail','semester-one']" class="apply-btn">
             Apply <i class="fas fa-arrow-right"></i>
-        </button>
+        </a>
         <div class="semester">
             <i class="fa-solid fa-calendar"></i>
             <span class="semester-text">SEMESTER</span>
@@ -108,60 +77,17 @@
         <h1 class="text-light">Get new jura studentjobs sent to your inbox.</h1>
         <div class="contact-form">
             <form>
-                <h3>Leave Us Your Info.</h3>
-                <div class="form-group mt-4">
+                <h2>Leave Us Your Info.</h2>
+                <div class="form-group mt-5">
                     <input class="form-control" type="text" placeholder="Your Name" required>
                 </div>
                 <div class="form-group mt-3">
                     <input class="form-control" type="email" placeholder="Your Email" required>
                 </div>
-                <button type="submit" class="btn btn-danger mt-4">
+                <button type="submit" class="btn btn-danger mt-5">
                     Submit <i class="fa fa-arrow-right"></i>
                 </button>
             </form>
         </div>
     </div>
 </section>
-<footer class="footer">
-    <div class="footer-top">
-        <ul class="footer-links">
-            <li><a href="#">
-                <span class="me-2">Jurastudijobs</span>
-                <i class="fa-solid fa-chevron-down"></i>
-            </a></li>
-            <li><a href="#">Get job alerts</a></li>
-            <li><a href="#">Impressum</a></li>
-            <li><a href="#">Datenschutzerklärung</a></li>
-            <li><a href="#">Widerrufsbelehrung</a></li>
-            <li><a href="#">Bildrechte</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
-        <div class="footer-lang">
-        <button class="lang-btn">
-            <i class="fa-solid fa-globe"></i> 
-            <span class="">English</span>
-            <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        </div>
-    </div>
-    <hr>
-    <div class="footer-bottom">
-        <p><strong>Copyright © 2024 Jurastudijobs</strong></p>
-        <div class="footer-social">
-            <a href="#">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-                </svg>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-        </div>
-    </div>
-</footer>

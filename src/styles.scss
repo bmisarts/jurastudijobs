@@ -3,110 +3,164 @@ body {
     background-color: #f8f9fa;
     margin: 0 3%;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #1D3559;
+}
+
 .logo {
     height: 35px;
 }
-.hero {
-    background-color: #001f54;
-    color: white;
 
+.hero {
+    background-color: #1D3559;
+    color: white;
+    padding: 5rem 0;
     .search-bar,
     .title {
-        max-width: 600px;
+        max-width: 700px;
         margin: auto;
     }
-
     h1 {
         font-weight: 700;
-        line-height: 52px;
-        font-size: 36px;
     }
-    
     .search-bar {
         position: relative;
-        max-width: 500px;
+        max-width: 700px;
         margin: auto;
-      
+
         .search-icon {
-          position: absolute;
-          left: 10px;
-          top: 50%;
-          transform: translateY(-50%);
-          color: #dfdfdf;
-          font-size: 1.2rem;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #dfdfdf;
+            font-size: 1.2rem;
         }
-      
+
         input {
-          padding-left: 45px; // Laisser de la place pour l’icône
-          width: 100%;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          height: 40px;
-      
-          &::placeholder {
-            color: #6c757d;
-            font-size: 0.9rem;
-          }
+            padding-left: 45px; // Laisser de la place pour l’icône
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 50px;
+            &::placeholder {
+                color: #6c757d;
+                font-size: 0.9rem;
+            }
         }
     }
 }
-.contact, .footer {
-    width: calc(100% + 6%);   
+
+h1 {
+    line-height: 52px;
+    font-size: 48px;
+}
+.job-description {
+    h2 {
+        padding: 0.5rem 0;
+    }
+    ul {
+        padding-left: 1.25rem;
+    }
+}
+.right-side-infos {
+    background-color: #E53945;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    .company-logo {
+        width: 200px;
+        height: 200px;
+
+    }
+}
+.contact,
+.footer {
+    width: calc(100% + 6%);
     margin: 0 -3%;
 }
+
 .contact {
-    background-color: #001f54;
+    background-color: #1D3559;
     padding: 4rem 10%;
+    h2 {
+        font-weight: 800;
+        font-size: 48px;
+    }
 }
+
 .footer {
     background-color: #F0FAEF;
     padding: 2rem 10%;
     color: #555;
 }
+
 .contact h1 {
     font-weight: bolder;
     font-size: 45px;
+    width: 50%;
+    padding-right: 5rem;
 }
-.contact-form { 
+
+.contact-form {
     border-radius: 5px;
-    min-width: 500px;
+    width: 50%;
     background-color: #F9F9FB;
     padding: 2rem;
+    margin: 0 3rem;
+    h2 {
+        font-size: 36px;
+        font-weight: 500;
+    }
+    input {
+        height: 50px;
+    }
 }
+
+
 .footer-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 600;
-  }
-  ul.nav-links {
+}
+
+ul.nav-links {
     display: flex;
     align-items: center;
-  }
-  .footer-links, .nav-links {
+}
+
+.footer-links,
+.nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
-  }
-  .footer-links {
+}
+
+.footer-links {
     padding: 0;
-  }
-  
-  .footer-links li, .nav-links li {
+}
+
+.footer-links li,
+.nav-links li {
     display: inline;
-  }
-  
-  .footer-links a, .nav-links a {
+}
+
+.footer-links a,
+.nav-links a {
     text-decoration: none;
     color: #555;
     font-size: 14px;
-  }
-  
-  .footer-links a:hover, .nav-links a:hover {
-    color: #ff4c4c;
-  }
-  
-  .lang-btn {
+}
+
+.footer-links a:hover,
+.nav-links a:hover {
+    color: #E53945;
+}
+
+.lang-btn {
     background-color: #ffffff;
     border: 1px solid #e1e1e1;
     border-radius: 5px;
@@ -116,30 +170,30 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-  }
-  
-  .footer-lang .flag-icon {
+}
+
+.footer-lang .flag-icon {
     font-size: 20px;
-  }
-  
-  .footer-bottom {
+}
+
+.footer-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-  }
-  
-  .footer-bottom p {
+}
+
+.footer-bottom p {
     margin: 0;
     font-size: 14px;
-  }
-  
-  .footer-social {
+}
+
+.footer-social {
     display: flex;
     gap: 10px;
-  }
-  
-  .footer-social a {
+}
+
+.footer-social a {
     text-align: center;
     text-decoration: none;
     color: #1D3559;
@@ -148,157 +202,216 @@ body {
     height: 30px;
     border-radius: 100%;
     border: 1.3px solid #1D3559
-  }
-  
-  .footer-social a:hover {
-    color: #ff4c4c;
-  }
+}
 
-.job-list {
-    .job-card {
-        background-color: #F9F9FB;
-        border: 1px solid #e0e0e0;
-        border-radius: 10px;
-        padding: 20px;
-        max-width: 900px;
-        margin: 20px auto;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    
-      
-    .job-card:hover {
-        background-color: #F0FAEF;
-        .apply-btn  {
-            display: flex !important;
-        }
-        .company-logo {
-            transform: translateY(5px);
-            transition: transform 0.3s ease;
-        }
-        .semester {
-            transform: translateY(-60px);
-            transition: transform 0.1s ease;
-        }
-        .job-infos {
-            transform: translatex(-10px);
-            transition: transform 0.3s ease;
-        }
+.footer-social a:hover {
+    color: #E53945;
+}
+
+.job-card {
+    background-color: #F9F9FB;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 992px;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-card:hover {
+    background-color: #F0FAEF;
+
+    .apply-btn {
+        display: flex !important;
     }
 
     .company-logo {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background-color: #ffffff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 10px;
-        border: 2px solid #e0e0e0;
-        transition: transform 0.3s ease;
-        color: #1D3559;
-        font-weight: 700;
-    }
-
-    .logo-text {
-        font-size: 12px;
-        color: #333333;
-        text-align: center;
-    }
-
-    .job-title {
-        font-size: 18px;
-        font-weight: bold;
-        color: #333333;
-        margin: 0;
-    }
-
-    .job-card-body {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 20px;
-    }
-
-    .tags {
-        display: flex;
-        gap: 10px;
-    }
-
-    .tag {
-        display: flex;
-        align-items: center;
-        background-color: #F0FAEF;
-        border-radius: 5px;
-        padding: 5px 10px;
-        font-size: 14px;
-        color: #1D3559;
-        border: 1px solid #1D35591F;
-    }
-
-    .tag.homeoffice {
-        background-color: #83AFAF;
-        color: #ffffff;
-    }
-
-    .tag i {
-        margin-right: 5px;
-    }
-
-    .apply-btn {
-        display: none;
-        align-items: center;
-        background-color: #ff4c4c;
-        color: #ffffff;
-        border: none;
-        border-radius: 5px;
-        padding: 5px 20px;
-        font-size: 14px;
-        cursor: pointer;
-    }
-
-    .apply-btn i {
-        margin-left: 5px;
-    }
-    .job-infos {
+        transform: translateY(5px);
         transition: transform 0.3s ease;
     }
+
     .semester {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #ffffff;
-        border-radius: 0 0 15px 15px;
-        padding: 10px;
-        height: 50px;
+        transform: translateY(-60px);
         transition: transform 0.1s ease;
     }
-    .semester i {
-        font-size: 110px;
-        color: #ff4c4c;
-        // position: absolute
-    }
 
-    .semester-text {
-        font-size: 14px;
-        font-weight: 900;
+    .job-infos {
+        transform: translatex(-10px);
+        transition: transform 0.3s ease;
     }
+}
 
-    .semester-number {
-        display: flex;
-        align-items: center;
+.company-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: 2px solid #e0e0e0;
+    transition: transform 0.3s ease;
+    color: #1D3559;
+    font-weight: 700;
+}
+
+.logo-text {
+    font-size: 12px;
+    color: #1D3559;
+    text-align: center;
+}
+
+.job-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+}
+
+.job-card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    background-color: #F0FAEF;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 18px;
+    color: #1D3559;
+    border: 1px solid #1D35591F;
+}
+
+.tag.homeoffice {
+    background-color: #83AFAF;
+    color: #ffffff;
+}
+
+.tag i {
+    margin-right: 5px;
+}
+
+.job-infos {
+    transition: transform 0.3s ease;
+}
+
+.semester {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+    height: 50px;
+    transition: transform 0.1s ease;
+}
+
+.semester i {
+    font-size: 110px;
+    color: #E53945;
+    // position: absolute
+}
+
+.semester-text {
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.semester-number {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.semester {
+    transform: translateY(-63px);
+}
+
+.semester i {
+    transform: translateY(25px);
+}
+
+.semester-text {
+    transform: translateY(-35px);
+}
+.semester-number {
+    transform: translateY(-42px);
+}
+
+
+.apply-btn {
+    display: none;
+    align-items: center;
+    background-color: #E53945;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login-btn {
+    background-color: #83AFAF;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+}
+
+.apply-btn i {
+    margin-left: 5px;
+}
+
+.back-btn {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 2px solid #457B9D;
+    color: #616161;
+    padding: 7px 9px;
+}
+
+.right-side-infos {
+    background-color: #E53945;
+    color: #ffffff;
+    h2, h5, a {
+        color: #ffffff;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .link-btn {
+        padding: 0.5rem 1rem;
+        width: 200px;
         text-align: center;
-        font-size: 25px;
-        font-weight: bolder;
+        border: 1.4px solid #ffffff;
+        color: #ffffff;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
     }
-    .semester {
-        transform: translateY(-63px);
+    .link-btn-inactive {
+        background-color: none;
+        transition: transform 0.3s ease;
     }
-    .semester i {
-        transform: translateY(25px);
-    }
-    .semester-text, .semester-number {
-        transform: translateY(-37px);
+    .link-btn-active {
+        background-color: #83AFAF;
+        border: none !important;
+        transition: transform 0.3s ease;
     }
 }
 
